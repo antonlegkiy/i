@@ -539,8 +539,6 @@
         $scope.isClarify = function (name) {
           return name.indexOf('writable=false') !== -1 ;
         };
-        console.log($scope)
-        console.log(tasks.getTask(21000820))
       }
 
     ])
@@ -562,11 +560,11 @@
         return value + (tail || '…');
       };
     })
-  .filter('fixDate', function () {
-    return function (value) {
-      var corrected = value.split('.')[0];
-      return corrected;
-    }
-  })
+	.filter('fixDate', function () {
+	  return function (value) {
+	    var corrected = value.split('.')[0];
+	    return corrected;
+	  }
+	})
 
 })();
