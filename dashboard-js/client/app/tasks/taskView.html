@@ -241,7 +241,7 @@
   </div>
 
   <div ng-if="clarify">
-    <clarify-directive></clarify-directive>
+    <clarify-directive ng-if="tabHistoryAppeal !== 'history'"></clarify-directive>
   </div>
 
   <div class="task-form-history" ng-if="tabHistoryAppeal === 'history'">
